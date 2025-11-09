@@ -75,3 +75,19 @@ header p {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* Song name links */
+.song-link {
+  text-decoration: none;
+  color: #1e63da; /* normal blue */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.song-link:hover {
+  color: #ff9900; /* changes to orange on hover */
+  text-decoration: underline;
+}
+.song-link:visited {
+  color: #800080; /* purple for visited links */
+}
