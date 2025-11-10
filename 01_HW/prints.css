@@ -21,30 +21,6 @@ body {
   padding: 16px;
 }
 
-/* Top nav (same look as your project) */
-/* Nav */
-.top-nav {
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-.top-nav a {
-  display: inline-block;
-  background-color: var(--brand);
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.top-nav .spacer {
-  flex: 1;
-}
-.top-nav a:hover {
-  background: #e6efff;
-}
-
 /* Page header */
 .page-header {
   text-align: center;

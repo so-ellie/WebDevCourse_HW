@@ -1,0 +1,48 @@
+:root {
+  --brand: #3164ff;
+  --border: #d8dee9;
+  --bg: #f7fafc;
+  --text: #0f172a;
+}
+
+/* Nav */
+.top-nav {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.top-nav a {
+  display: inline-block;
+  background-color: var(--brand);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.top-nav .spacer {
+  flex: 1;
+}
+
+.top-nav button {
+  display: inline-block;
+  background-color: var(--brand);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Match hover animation */
+.top-nav button:hover {
+  background-color: var(
+    --brand
+  ); /* darker blue (same as link hover if you add one) */
+}
