@@ -1,0 +1,145 @@
+:root {
+  --brand: #1e63da;
+  --border: #d8dee9;
+  --bg: #f7fafc;
+  --text: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+    Arial;
+  color: var(--text);
+  background: var(--bg);
+  padding: 16px;
+}
+
+/* Nav */
+.top-nav {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.top-nav a {
+  display: inline-block;
+  background-color: var(--brand);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.top-nav .spacer {
+  flex: 1;
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  margin: 8px 0 18px;
+}
+.page-header h1 {
+  margin: 0 0 6px;
+  color: var(--brand);
+}
+.page-header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* Table */
+.table-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.audio-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.audio-table thead th {
+  background: #eef4ff;
+  color: #1f2937;
+  text-align: left;
+  padding: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+}
+
+.audio-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.audio-table tbody tr:hover td {
+  background: #fafcff;
+}
+
+/* Cover column */
+.cover img {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Player column */
+.player audio {
+  width: 210px;
+  max-width: 100%;
+}
+
+/* Download link */
+.download a {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+.download a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .audio-table thead {
+    display: none;
+  }
+  .audio-table,
+  .audio-table tbody,
+  .audio-table tr,
+  .audio-table td {
+    display: block;
+    width: 100%;
+  }
+  .audio-table tbody tr {
+    border-bottom: 1px solid var(--border);
+    padding: 10px 12px;
+  }
+  .audio-table tbody td {
+    border: none;
+    padding: 6px 0;
+  }
+  .cover {
+    margin-bottom: 6px;
+  }
+  .player {
+    margin: 8px 0;
+  }
+  .download {
+    margin-top: 6px;
+  }
+}

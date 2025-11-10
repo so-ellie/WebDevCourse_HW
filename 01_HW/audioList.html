@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Audio List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="audioList.css" />
+  </head>
+  <body>
+    <!-- Top nav -->
+    <nav class="top-nav">
+      <a href="playlist.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <header class="page-header">
+      <h1>Audio List</h1>
+    </header>
+
+    <section class="table-wrap">
+      <table class="audio-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th>Play</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+
+        <tbody id="trackBody">
+          <tr>
+            <td class="cover">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Requiem_%28Verdi%29_Titelblatt_%281874%29.jpg/330px-Requiem_%28Verdi%29_Titelblatt_%281874%29.jpg"
+                alt="Verdi Requiem cover"
+              />
+            </td>
+            <td>Dies Irae</td>
+            <td>Verdi</td>
+            <td>1874</td>
+            <td>
+              <audio controls>
+                <source
+                  src="AudioFiles/“Dies irae” (Verdi’s Requiem).mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </td>
+            <td>
+              <a href="AudioFiles/“Dies irae” (Verdi’s Requiem).mp3" download
+                >Download</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td class="cover">
+              <img
+                src="https://t2.genius.com/unsafe/197x197/https%3A%2F%2Fimages.genius.com%2Fa1379e3fbd5042602736be70e639d488.500x448x1.jpg"
+                alt="A Story Told Cover"
+              />
+            </td>
+            <td>A Story Told (the count of monte cristo)</td>
+            <td>Patric Stanke</td>
+            <td>2018</td>
+            <td>
+              <audio controls>
+                <source
+                  src="AudioFiles/A Story Told (the count of monte cristo).mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </td>
+            <td>
+              <a
+                href="AudioFiles/A Story Told (the count of monte cristo).mp3"
+                download
+                >Download</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td class="cover">
+              <img
+                src="https://t2.genius.com/unsafe/197x197/https%3A%2F%2Fimages.genius.com%2F773ea7eb9a6e5f1e01bb0eef3d57b684.1000x1000x1.png"
+                alt="Your Idol (Saja Boys) Cover"
+              />
+            </td>
+            <td>Your Idol (Saja Boys)</td>
+            <td>Saja Boys</td>
+            <td>2025</td>
+            <td>
+              <audio controls>
+                <source
+                  src="AudioFiles/Your Idol (Saja Boys).mp3"
+                  type="audio/mpeg"
+                />
+              </audio>
+            </td>
+            <td>
+              <a href="AudioFiles/Your Idol (Saja Boys).mp3" download
+                >Download</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="audioList.js"></script>
+  </body>
+</html>
