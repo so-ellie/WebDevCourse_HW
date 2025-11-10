@@ -33,6 +33,26 @@ body {
   padding: 32px 16px 56px;
 }
 
+/* Nav */
+.top-nav {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.top-nav a {
+  display: inline-block;
+  background-color: var(--brand);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.top-nav .spacer {
+  flex: 1;
+}
+
 /* ---------- Page Title ---------- */
 h1 {
   margin: 8px 0 18px;
@@ -102,7 +122,7 @@ textarea {
 /* Focus state */
 input:focus-visible,
 textarea:focus-visible,
-.home-btn:focus-visible,
+.top-nav:focus-visible,
 button:focus-visible {
   outline: 3px solid color-mix(in oklab, var(--brand) 60%, white);
   outline-offset: 2px;
@@ -139,32 +159,6 @@ button:hover {
 }
 
 button:active {
-  transform: translateY(1px);
-}
-
-/* ---------- Back to Home Button ---------- */
-.back-button {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.home-btn {
-  display: inline-block;
-  background: var(--brand);
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 10px;
-  font-weight: 700;
-  box-shadow: 0 6px 14px rgba(49, 100, 255, 0.22);
-  transition: background 0.2s ease, transform 0.08s ease;
-}
-
-.home-btn:hover {
-  background: var(--brand-darker);
-}
-
-.home-btn:active {
   transform: translateY(1px);
 }
 
