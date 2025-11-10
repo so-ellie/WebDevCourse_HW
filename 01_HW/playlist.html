@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>Music Table</title>
-    <!--link rel="stylesheet" href="playlist.css" /-->
-
-    <link rel="stylesheet" href="SKINS/dark.css" />
+    <link id="skin-css" rel="stylesheet" href="SKINS/basic.css" />
   </head>
   <body>
     <!-- Top nav -->
     <nav class="top-nav">
-      <a href="contact.html">Contact</a>
-      <a href="audioList.html">Audio List</a>
+      <a href="audioList.html" class="nav-btn">Audio List</a>
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <button id="skin-btn" class="nav-btn" onClick="changeTheme()">
+        Change Skin
+      </button>
     </nav>
 
     <header>
@@ -127,5 +128,6 @@
         </tr>
       </tbody>
     </table>
+    <script src="playlist.js" defer></script>
   </body>
 </html>
