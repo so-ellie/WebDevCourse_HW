@@ -1,0 +1,141 @@
+/* Match the contact page palette */
+:root {
+  --brand: #3164ff;
+  --brand-darker: #2349c9;
+  --card: #d9ecff;
+  --text: #0f172a;
+  --border: #e5e7eb;
+  --bg: #f7fafc;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+    Arial;
+  color: var(--text);
+  background: var(--bg);
+  padding: 16px;
+}
+
+/* Top nav (same look as your project) */
+/* Nav */
+.top-nav {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.top-nav a {
+  display: inline-block;
+  background-color: var(--brand);
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.top-nav .spacer {
+  flex: 1;
+}
+.top-nav a:hover {
+  background: #e6efff;
+}
+
+/* Page header */
+.page-header {
+  text-align: center;
+  margin-bottom: 14px;
+}
+.page-header h1 {
+  color: var(--brand);
+  margin: 6px 0;
+}
+.page-header p {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* Table wrapper */
+.table-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Table */
+.prints-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.prints-table thead th {
+  background: #eef4ff;
+  color: #1f2937;
+  text-align: left;
+  padding: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+}
+.prints-table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+/* Thumbnail column */
+.thumb img {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+/* Commit link */
+.commit {
+  color: var(--brand);
+  font-weight: 700;
+  text-decoration: none;
+}
+.commit:hover {
+  text-decoration: underline;
+}
+
+/* Make filenames wrap nicely on small screens */
+code {
+  word-break: break-all;
+}
+
+/* Responsive: stack rows on narrow screens */
+@media (max-width: 720px) {
+  .prints-table thead {
+    display: none;
+  }
+  .prints-table,
+  .prints-table tbody,
+  .prints-table tr,
+  .prints-table td {
+    display: block;
+    width: 100%;
+  }
+  .prints-table tbody tr {
+    padding: 10px 12px;
+  }
+  .prints-table tbody td {
+    border: none;
+    padding: 6px 0;
+  }
+  .thumb img {
+    width: 100%;
+    height: auto;
+  }
+}
